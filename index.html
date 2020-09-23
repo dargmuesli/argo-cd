@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Argo CD</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-black-orange">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="cde80dfeec0e7c3d6cbeeaad6ea1e2a7"><section data-id="bc123d9767eaeaae67018cb4f66249dc" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 220.5px; height: auto;" data-block-id="80c336da7cbd3f2fcd4005d1c55e8fa5" data-name="text-8c6702"><a class="sl-block-style" style="z-index: 10;" href="https://argoproj.github.io/argo-cd/" target="_blank"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Argo CD</h1>
+</div></a></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 381px;" data-name="text-3dc5a2" data-block-id="fce5d0b0b953db0aff4f479cee127cc5"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p><em>declarative, <a href="https://www.weave.works/technologies/gitops/" target="_blank">GitOps</a> continuous delivery tool for Kubernetes</em></p>
+</div></div></section><section data-id="3040b20f60080fafe9c1fa555c77fe10"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 0px;" data-name="text-61b781" data-block-id="7aa04a77f1051d52e19c4dd3c05ebaef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>GitOps?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 140px;" data-name="text-afa946" data-block-id="6582fd64c39eb6ee0c6fb4ddbae3afc4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ol>
+	<li class="fragment" data-fragment-index="0">
+	<p>The entire system described declaratively.</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>The canonical desired system state versioned in Git.</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Approved changes that can be automatically applied to the system.</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Software agents to ensure correctness and alert on divergence.</p>
+	</li>
+</ol>
+</div></div></section></section><section data-id="70e8e0f95b544f79bfc9aea5d053632b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 220.5px; height: auto;" data-name="text-8c6702" data-block-id="f3b926b8510d360e7476c80089048f84"><a class="sl-block-style" style="z-index: 10;" href="https://argoproj.github.io/argo-cd/" target="_blank"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Argo CD</h1>
+</div></a></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 381px;" data-name="text-3dc5a2" data-block-id="ce7f908f6ee44ba0b3958a0327cb19fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><em>declarative, <a href="https://www.weave.works/technologies/gitops/" target="_blank">GitOps</a> continuous delivery tool for Kubernetes</em></p>
+</div></div></section><section data-id="bf483c7e29c29542ab36695e44dbb891"><div class="sl-block" data-block-type="iframe" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-name="iframe-623e28" data-block-id="836c152316866c5fb5f0c1af616d4437"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation" data-preload="true" data-lazy-loaded="" data-src="https://argoproj.github.io/argo-cd/assets/argocd-ui.gif"></iframe></div></div></section><section data-id="66c23ee3f6f8bc40143905db07f8779c"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 210px;" data-name="text-598611" data-block-id="d45eab8c2fbbc932058b0b576f224e65"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p><em>Application definitions, configurations, and environments should be declarative and version controlled.</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 350px;" data-name="text-0158b9" data-block-id="af8e6ec32a82fedf5bcb51a887cbddf8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p><em>Application deployment and lifecycle management</em></p>
+
+<p><em>should be automated, auditable,</em></p>
+
+<p><em>and easy to understand.</em></p>
+</div></div></section><section data-id="96a3e773966bb70a159cb241e966717f"><div class="sl-block" data-block-type="image" style="width: 734.605px; height: 700px; left: 112.698px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-3013b1" data-block-id="2e00b0d704b43aa7a4be2ec0147fbfe8"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="743" data-natural-height="708" data-lazy-loaded="" data-src="argo-cd/72988c0e8bdf16705aaed2a080cf029d.png"></div></div></div></section><section data-id="11ce04cac3ae6a6ed283f336dc53079a"><div class="sl-block" data-block-type="text" style="height: auto; width: 733px; left: 113.5px; top: 0px;" data-name="text-899af3" data-block-id="a307b2ed1ffcf288dfec35e88920be02"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>"Wir sind geil, weil ..."</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 140px;" data-name="text-aa0042" data-block-id="972b20ad46acdb76f9693d3c64683b57"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li class="fragment" data-fragment-index="0">Automatisierung! Webhooks! Access Tokens!</li>
+	<li class="fragment" data-fragment-index="1">Synchronisierung! Mit event hooks!</li>
+	<li class="fragment" data-fragment-index="2">Unterstützung vieler Konfigurationsformate</li>
+	<li class="fragment" data-fragment-index="3">Managt auch mehrere Cluster</li>
+	<li class="fragment" data-fragment-index="4">SSO-Integration<br>
+	(OIDC, OAuth2, LDAP, SAML 2.0, GitHub, GitLab, Microsoft, LinkedIn)</li>
+	<li class="fragment" data-fragment-index="5">Fancy Web UI &amp; CLI</li>
+	<li class="fragment" data-fragment-index="6">Easy Rollbacks</li>
+	<li class="fragment" data-fragment-index="7">Health-Status-Analyse</li>
+	<li class="fragment" data-fragment-index="8">Audit trails</li>
+	<li class="fragment" data-fragment-index="9">Prometheus-Metriken</li>
+</ul>
+</div></div></section><section data-id="df1178c4a3ffabb1226288f018d1da1f"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 140px;" data-name="text-890098" data-block-id="e44be0575eb6b5c5d2dadb4df011a670"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Development Status</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 295px;" data-name="text-a629d5" data-block-id="5d0844af2147f03becb259c64b5d1db8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p><em>Argo CD is actively developed</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 342px;" data-name="text-f1b0a9" data-block-id="28abcc17f9e3fb8af160991f7173e2f0"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p><em>and is being used in production to deploy SaaS services at Intuit.</em></p>
+</div></div></section><section data-id="73d2469c04ebc652655d886fe75e4b9b"><div class="sl-block" data-block-type="iframe" style="width: 960px; height: 700px; left: 0px; top: 0px;" data-name="iframe-a4fcb3" data-block-id="6eea042401419b76d818e712fb794673"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation" data-preload="true" data-lazy-loaded="" data-src="https://www.boerse.de/aktien/Intuit-Aktie/US4612021034"></iframe></div></div></section><section data-id="c5f0fef594dda7531caf26b13282e330"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 311px;" data-name="text-86aea2" data-block-id="6b07f61b2039d8d853dfe220b1f3499d"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0">
+<p>So, und jetzt bitte einsetzen.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 350px;" data-name="text-4ce484" data-block-id="7f089b8b193f72c0aea5bc4331af614c"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>:)</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 186px; top: 560px;" data-name="text-652f37" data-block-id="0b27c6eefcf8c76d57407ccfcdccd1c8"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p>Oder so.</p>
+</div></div></section><section data-id="c071ce6903cba04989c28398daaf01fa"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 122.25px;" data-name="text-74662b" data-block-id="c13b3ad97d16a071e9e182cf7b3ba78e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2><span style="font-size:4.0em">Thx!</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 382.75px;" data-name="text-48ed67" data-block-id="100903793c93a32e808e46a80848ae68"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:5.0em">🙈</span></p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1885928,"slug":"argo-cd","title":"Argo CD","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2020-07-16T09:29:34.417Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/e7382b49a31b982d421ecf32a70c23ca/thumb.jpg?1594936967","view_count":14,"user":{"id":1142422,"username":"dargmuesli","name":"Jonas Thelemann","description":"","thumbnail_url":"https://www.gravatar.com/avatar/632fa3870b8c01d361cf16615526654b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":3934566,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":12,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1594939040852,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{"bc123d9767eaeaae67018cb4f66249dc":"Heute Argo CD\n\ndeklarativ?\nGitOps?\nCD?\nKubernetes!\n\nWie sieht das aus? -\u003e","bf483c7e29c29542ab36695e44dbb891":"Das ist Oberfläche\n\nKomischer Tintenfisch\n\nKomische Dinge,\nSync, ...?\n\nWas sagt die Website noch? -\u003e","66c23ee3f6f8bc40143905db07f8779c":"Wie sollte es sein?\n\nHört sich gut an.\nWie tut Argo CD das? -\u003e","96a3e773966bb70a159cb241e966717f":"Draufgucken, während ich rede\n\nArgo CD nutzt\n... GitOps -\u003e Git = source of truth für Applikationsstatus\n... Kubernetes Manifeste durch kustomize, helm, yaml Manifeste, custom plugins\n\nArgo CD *automatisiert* das Deployment in Zielumgebungen.\n\nArgo CD *vergleicht* als Kubernetes Controller den Applikationsstatus mit dem gewünschten Status aus Git.\n\n... zeigt bspw. out of sync an\n... erlaubt reverts, ...\n\nWieso aber Argo CD?\nGoogle sagt z.B. \"Argo CD... vs flux\" -\u003e","3040b20f60080fafe9c1fa555c77fe10":"Was ist GitOps?\n\n4 Punkte von der verlinkten Seite\n\nSoftware Agents?","11ce04cac3ae6a6ed283f336dc53079a":"Formate: kustomize, helm, ...","df1178c4a3ffabb1226288f018d1da1f":"...\n\nOk, ... Bugs?\n\nwas ist denn Intuit? Kennt das wer?","73d2469c04ebc652655d886fe75e4b9b":"Ist im Grünen, also voll nice.","c071ce6903cba04989c28398daaf01fa":"Danke für das nice Thema für meinen ersten Vortrag!"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
